@@ -1,0 +1,9 @@
+<h2>circus</h2>
+
+<ul>
+  <% @circuses.each do |circus| %>
+    <li>
+      <%= link_to circus.name, circus_path(circus) %>
+    </li>
+  <% end %>
+</ul>
